@@ -1,0 +1,132 @@
+<!doctype html>
+<HTML>
+<head>
+<meta charset="UTF-8">
+<title>module2-solution</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    background-color: #eeeeee;
+}
+h1{
+margin:3%;
+font-family: 'allura', cursive;
+font-size: 52px;
+
+text-align: center;
+}
+.our_menu{
+    display: flex;
+    
+    
+    text-align: center;
+    
+    justify-content: center;
+}
+.our_menu .item{
+background-color: #a52a2a;
+margin: 10px;
+
+width: 100%;
+padding: 20px;
+padding-top: 40px;
+line-height: 20px;
+position: relative;
+border: 2px solid black;
+}
+h3{
+    padding: 1.5%;
+    color: cornsilk;
+    position: absolute;
+    background-color: #32e0c4;
+    font-size:26px;
+    width: fit-content;
+    border: 2px solid black;
+    right: 0px;
+    top: 0px;
+}
+@media(max-width: 992px){
+
+}
+@media(max-width: 992px){
+.our_menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "box1 box2"
+                         "box3 box3" ;
+
+}
+.our_menu .item{
+    
+}
+.our_menu #item1 {
+    width: auto;
+    grid-area: box1;
+   
+}
+.our_menu #item2 {
+    width: auto;
+    grid-area: box2;
+   
+}
+.our_menu #item3 {
+    padding-top: 60px;
+    width: auto;
+    grid-area: box3;
+    
+   
+}
+}
+
+
+@media(min-width: 768px)and(max-width: 975px){
+.our_menu .item {
+        
+    
+}
+}
+@media(max-width: 767px){
+   
+}
+@media(max-width: 767px){
+.our_menu {
+    flex-wrap: wrap;
+display: block;
+width: 100%;
+} 
+.our_menu .item{
+          width: auto;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>OUR MENU</h1>
+</div>
+<div class="our_menu">
+<div id="item1" class="item">
+    <h3>chicken</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</div>
+<div id="item2" class="item">
+<h3>beef</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</div>
+<div id="item3" class="item">
+<h3>sushi</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</div>
+</div>
+</div>
+
+</body>
+</HTML>
